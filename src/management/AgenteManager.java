@@ -12,11 +12,11 @@ public class AgenteManager {
     }
 
     public void registrarAgente() {
-        int id = ConsoleUtils.leerEntero("Ingrese el ID del agente: ");
+        int id = ConsoleUtils.leerEntero("Ingrese codigo del agente: ");
         ConsoleUtils.limpiarBuffer();
 
-        String nombre = ConsoleUtils.leerTexto("Ingrese el nombre del agente: ");
-        String habilidad = ConsoleUtils.leerTexto("Ingrese la habilidad especial del agente: ");
+        String nombre = ConsoleUtils.leerTexto("Ingrese nombre del agente: ");
+        String habilidad = ConsoleUtils.leerTexto("Ingrese habilidad especial del agente: ");
 
         Agente nuevoAgente = new Agente(id, nombre, habilidad);
         agentes.add(nuevoAgente);
